@@ -24,8 +24,9 @@ then
         sudo apt-get -y autoremove
     fi
     clear && echo -en "\e[3J"
-    tput setaf 2; echo "$PACKAGES"; tput sgr0
     tput setaf 2; echo "ОБНОВЛЕНИЕ СИСТЕМЫ УСПЕШНО ЗАВЕРШЕНО"; tput sgr0
+    tput setaf 2; echo "БЫЛИ ОБНОВЛЕНЫ СЛЕДУЮЩИЕ ПАКЕТЫ:"; tput sgr0
+    tput setaf 3; echo "$PACKAGES"; tput sgr0
 else
     clear && echo -en "\e[3J"
     tput setaf 5; echo "ОБНОВЛЕНИЕ СИСТЕМЫ НЕ ТРЕБУЕТСЯ"; tput sgr0
