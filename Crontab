@@ -1,0 +1,5 @@
+#sudo
+0 7 * * * shutdown -r now
+
+#convex
+*/5 * * * * grive --path /mnt/Filestorage_1000/GoogleDrive/
